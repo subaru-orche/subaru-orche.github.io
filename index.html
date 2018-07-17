@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>広島大学霞OB管弦楽団 "昴"</title>
+
+<style>
+*{
+box-sizing:border-box;
+}
+nav{
+}
+section{
+background-image:url();
+background-size:200px auto;
+background-repeat:no-repeat;
+background-position:center center;
+}
+
+
+
+body{
+margin:0;
+color:#333;
+font-size:14px;
+font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+text-align:justify;
+
+/*
+background-color:rgba(240,240,255,.5);
+background-image: radial-gradient(white 15%, transparent 16%),
+radial-gradient(white 15%, transparent 16%);
+background-size:60px 60px;
+background-position: 0 0, 30px 30px;
+*/
+}
+
+.center{
+width:100%;
+max-width:750px;
+margin:0 auto;
+}
+
+.orchestra{
+display:table;
+height:500px;width:100%;
+background-image:url(orchestra.png);
+background-size:cover;
+color:#fff;
+text-shadow:0 0 10px #111;
+font-size:2.2em;
+letter-spacing:.5em;
+text-align:center;
+}
+.orchestra_letter{
+display:table-cell;
+vertical-align:middle;
+}
+
+h1{
+margin:10px 0 20px;
+padding:20px;
+border-bottom:2px solid #003f8e;
+font-size:3em;
+font-weight:normal;
+text-align:center;
+}
+.caption{
+font-size:14px;
+margin-top:1em;
+}
+h2{
+max-width:300px;
+margin:0 auto 20px;padding:10px 0;
+font-size:1.5em;
+font-weight:normal;
+text-align:center;
+/*
+background-color:#003f8e;
+*/
+border:1px solid #003f8e;
+border-radius:40px;
+color:#003f8e;
+}
+h3{
+padding:10px 0;
+border-bottom:1px solid #003f8e;
+text-align:center;
+font-weight:normal;
+}
+
+nav{
+margin:20px 0;
+}
+nav ul{
+max-width:500px;
+margin:0 auto;
+padding:0px;
+display:flex;
+justify-content:space-around;
+}
+nav li{
+padding:0 20px;
+list-style:none;
+}
+nav li a{
+padding-bottom:5px;
+text-decoration:none;
+color:#333;
+transition:.3s;
+}
+nav li a:hover{
+padding-bottom:5px;
+text-decoration:none;
+color:#003f8e;
+}
+
+section{
+margin:20px 0;
+padding:20px;
+/*
+background-color:rgba(250,250,250,.5);
+*/
+}
+section h3{
+margin-top:40px;
+}
+h2+h3{
+margin-top:auto;
+}
+dl{
+width:auto;
+}
+dt{
+border-bottom:1px dotted #003f8e;
+margin:15px 0 5px 0;
+padding-left:5px;
+}
+
+
+footer{
+margin:20px 0 10px;
+padding:20px;
+font-size:12px;
+text-align:center;
+}
+.site_map{
+text-align:left;
+display:flex;
+justify-content:space-around;
+}
+footer ul{
+padding:0 20px 0 0;
+}
+footer li{
+list-style:none;
+padding:0;
+}
+footer li a{
+text-decoration:none;
+color:#777;
+}
+footer li a.title{
+font-weight:bold;
+color:#555;
+}
+footer a:hover{
+border-bottom:1px solid #999;
+}
+
+
+
+a{
+padding:0 2px 1px;
+text-decoration:none;
+color:#003f8e;
+border-bottom:1px solid transparent;
+transition:.3s;
+}
+a:hover{
+border-bottom:1px solid #003f8e;
+}
+
+
+p{
+margin:0;
+}
+
+hr{
+border:.5px solid #999;
+}
+
+img{
+margin:30px 0 0 0;
+width:300px;
+}
+.flyer{
+border-bottom:0;
+}
+.flyer:hover{
+border-bottom:0;
+}
+
+
+.concert_flyer{
+display:flex;
+justify-content: space-around;
+}
+
+.annotation{
+margin-top:5px;
+font-size:10px;
+}
+
+#entry dl{
+max-width:350px;
+margin:0 auto;
+}
+#entry dt{
+width:100px;
+margin:0 10px 5px 0;padding:0;
+float:left;
+clear:left;
+border:0;
+text-align:right;
+}
+#entry dd{
+margin:0 0 5px 0;padding:0;
+}
+
+
+.history_margin{
+margin-top:10px;margin-bottom:10px;
+}
+
+
+.contact{
+padding:20px 0;
+text-align:center;
+}
+
+.form{
+padding:10px 50px;
+text-align:center;
+border-radius:10px;
+border:1px solid #1e90ff;
+}
+.form:hover{
+color:#fff;
+background-color:#1e90ff;
+}
+
+.subaru{
+margin-left:8px;
+}
+
+
+@media screen and ( max-width:620px )
+{
+
+h1{
+font-size:26px;
+}
+.caption{
+font-size:12px;
+}
+
+.subaru{
+font-size:30px;
+line-height:1em;
+margin-left:0;
+}
+.br::before{
+content:"\A";
+white-space:pre;
+}
+
+h2{
+font-size:25px;
+}
+
+.center{
+width:auto;
+margin:10px;
+}
+
+.orchestra{
+height:300px;
+}
+
+nav li{
+padding:0 10px;
+}
+
+.site_map{
+display:block;
+}
+
+dl{
+width:100%;
+}
+img{
+width:100%;padding:0 10%;
+}
+.concert_flyer{
+flex-wrap:wrap-reverse;
+}
+
+#entry dl,dt,dd{
+margin-left:0;padding-left:0;
+}
+
+
+}
+
+
+
+@media screen and ( max-width:375px )
+{
+h1{
+font-size:25px;
+}
+.orchestra{
+font-size:1.5em;
+}
+nav li{
+padding:5px;
+font-size:11px;
+}
+
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="center">
+
+<h1 id="top">
+広島大学霞OB管弦楽団<span style="color:#003f8e;
+" class="subaru br">"昴"</span>
+<p class="caption">広島大学霞管弦楽団OB・OGによる<span class="br">アマチュアオーケストラ</span></p>
+</h1>
+
+<nav>
+<ul>
+<li><a href="#concert">コンサート</a>
+<li><a href="#entry">エントリー</a>
+<li><a href="#history">過去の公演</a>
+<li><a href="#contact">お問い合わせ</a>
+</ul>
+</nav>
+
+</div>
+
+
+
+<div class="center">
+
+
+<section id="concert">
+<h2>コンサート</h2>
+<h3>第6回定期演奏会</h3>
+
+<div class="concert_flyer">
+<dl>
+<dt>日時
+<dd>2018年11月25日（日）14:00開演
+<br>（13:30開場、16:00終演予定）
+<dt>場所
+<dd>南区民文化センター ホール
+<dt>曲目
+<dd>交響曲第6番『田園』（ベートーヴェン）
+<dd>ほか
+<dd class="annotation">※曲目は予告なく変更となる場合があります。
+<dt>入場料
+<dd>無料
+<dt>備考
+<dd>未就学児入場可
+<dt>主催
+<dd>広島大学霞OB管弦楽団 "昴"
+</dl>
+<a href="flyer_subaru_6.png" class="flyer"><img src="flyer_subaru_6_s.png"></a>
+</div>
+
+</section>
+
+
+
+
+<section id="entry">
+<h2>エントリー</h2>
+
+<!--
+<p>現在奏者の募集は行っておりません。</p>
+-->
+
+<h3 id="requirement">応募資格</h3>
+<p>霞管弦楽団のOB・OG及び現役生、またはその関係者であること。</p>
+<h3 id="procedure">応募方法</h3>
+<p>パートリーダーもしくは、<a href="#contact">お問い合わせ</a>連絡先まで参加希望の旨ご連絡下さい。後日、スタッフよりご返信いたします。</p>
+<h3 id="part_leaders">パートリーダー一覧</h3>
+<dl>
+<dt>ヴァイオリン
+<dd>小田　　綾（平成25年卒）
+<dt>ヴィオラ
+<dd>稲田久美子（平成24年卒）
+<dt>チェロ
+<dd>松本洋一郎（在学6年）
+<dt>コントラバス
+<dd>波多野
+<dt>フルート
+<dd>杉原　奈穂（平成28年卒）
+<dt>オーボエ
+<dd>中本　尚希（在学6年）
+<dt>クラリネット
+<dd>城戸健士郎（平成28年卒）
+<dt>ファゴット
+<dd>青野　咲希（平成29年卒）
+<dt>ホルン
+<dd>吉山　紗代（平成30年卒）
+<dt>トランペット
+<dd>木下　裕貴（平成29年卒）
+<dt>トロンボーン
+<dd>杉野
+<dt>テューバ
+<dd>鍋島　新志（平成26年卒）
+<dt>パーカッション
+<dd>山田　風花（平成27年卒）
+</dl>
+
+</section>
+
+
+
+<section id="history">
+<h2>過去の公演</h2>
+<dl>
+<dt class="history_margin">第1回定期演奏会
+<dd class="history_margin">2013年7月6日（土）17:30 開演
+<dd class="history_margin">南区民文化センター ホール
+<dd class="history_margin">渡辺正済 指揮
+<dd>組曲『アラジン』より抜粋（ニールセン）
+<dd>交響詩『夏の牧歌』（オネゲル）
+<dd>バレエ音楽『ファウスト』より フリネの踊り（グノー）
+<dd>交響曲第4番 ホ短調（ブラームス）
+
+<dt>第2回定期演奏会
+<dd class="history_margin">2014年9月20日（土）17:30 開演
+<dd class="history_margin">南区民文化センター ホール
+<dd class="history_margin">六車一樹 指揮
+<dd>エニグマ変奏曲より 第9変奏『ニムロッド』（エルガー）
+<dd>組曲『眠れる森の美女』（チャイコフスキー）
+<dd>交響曲第5番 ハ短調（ベートーヴェン）
+
+<dt>第3回定期演奏会
+<dd class="history_margin">2015年9月22日（土）17:30 開演
+<dd class="history_margin">南区民文化センター ホール
+<dd class="history_margin">六車一樹 指揮
+<dd>『マタイ受難曲』より コラール（バッハ）
+<dd>交響詩『フィンランディア』（シベリウス）
+<dd>『ペール・ギュント』第1組曲（グリーグ）
+<dd>交響曲第2番 ニ長調（シベリウス）
+
+<dt>第4回定期演奏会
+<dd class="history_margin">2016年9月24日（土）17:30 開演
+<dd class="history_margin">南区民文化センター ホール
+<dd class="history_margin">六車一樹 指揮
+<dd>交響詩『中央アジアの草原にて』（ボロディン）
+<dd>『アルルの女』第2組曲（ビゼー）
+<dd>交響曲第2番 ロ短調（ボロディン）
+
+<dt>第5回定期演奏会
+<dd class="history_margin">2017年11月26日（日）17:30 開演
+<dd class="history_margin">南区民文化センター ホール
+<dd class="history_margin">六車一樹 指揮
+<dd>大学祝典序曲（ブラームス）
+<dd>交響曲第7番 イ長調（ベートーヴェン）
+<dd>ほか
+
+</dl>
+</section>
+
+
+
+
+
+<section id="contact">
+<h2>お問い合わせ</h2>
+<p class="contact">メール　subaru.orche@gmail.com</p>
+</section>
+
+
+<footer>
+<hr>
+<p>&copy KASUMI SUBARU ORCHESTRA 2018</p>
+<div class="site_map">
+<ul>
+<li><a class="title" href="#top">霞OB管弦楽団 "昴"</a>
+</ul>
+<ul>
+<li><a class="title" href="#concert">コンサート</a>
+<li><a href="#concert">第6回定期演奏会</a>
+</ul>
+<ul>
+<li><a class="title" href="#entry">エントリー</a>
+<li><a href="#requirement">応募資格</a>
+<li><a href="#procedure">応募方法</a>
+<li><a href="#part_leaders">パートリーダー一覧</a>
+</ul>
+<ul>
+<li><a class="title" href="#history">過去の公演</a>
+</ul>
+<ul>
+<li><a class="title" href="#contact">お問い合わせ</a>
+</ul>
+</div>
+</footer>
+
+</div>
