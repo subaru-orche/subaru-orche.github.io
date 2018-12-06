@@ -557,3 +557,59 @@ font-size:11px;
 </footer>
 
 </div>
+
+<style>
+*{
+box-sizing:border-box;
+}
+
+.box{
+}
+
+.hover{
+height:30px;width:30px;
+margin:10px;
+z-index:3;
+}
+
+.bar_1{
+position:absolute;
+height:10px;width:30px;
+border-bottom:1px solid #333;
+transition:.5s;
+z-index:2;
+}
+.hover:hover .bar_1{
+height:10px;width:34.3px;
+transform:rotate(45deg);
+transform-origin:10px 10px;
+}
+
+.bar_2{
+position:absolute;
+height:10px;width:30px;
+margin-top:20px;
+border-top:1px solid #333;
+transition:.5s;
+z-index:2;
+}
+.hover:hover .bar_2{
+height:10px;width:34.3px;
+transform:rotate(-45deg);
+transform-origin:10px 0px;
+}
+
+
+</style>
+
+<a href=""><div class="hover">
+
+<div class="bar_1">
+</div>
+
+<div class="bar_2">
+</div>
+
+</div>
+
+</a>
