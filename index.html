@@ -565,6 +565,7 @@ font-size:11px;
 
 <style>
 *{
+margin:0;padding:0;
 box-sizing:border-box;
 }
 
@@ -572,8 +573,14 @@ box-sizing:border-box;
 }
 
 .hover{
-height:30px;width:30px;
-margin:10px;
+height:40px;width:40px;
+padding:5px;
+background-color:#eee;
+z-index:3;
+}
+
+.menu_toggle{
+position:absolute;
 z-index:3;
 }
 
@@ -584,11 +591,13 @@ border-bottom:1px solid #333;
 transition:.5s;
 z-index:2;
 }
+/*
 .hover:hover .bar_1{
 height:10px;width:34.3px;
 transform:rotate(45deg);
 transform-origin:10px 10px;
 }
+*/
 
 .bar_2{
 position:absolute;
@@ -598,11 +607,13 @@ border-top:1px solid #333;
 transition:.5s;
 z-index:2;
 }
+/*
 .hover:hover .bar_2{
 height:10px;width:34.3px;
 transform:rotate(-45deg);
 transform-origin:10px 0px;
 }
+*/
 
 
 input.menu_toggle:checked + div.hover .bar_1 {
@@ -617,13 +628,14 @@ transform-origin:10px 0px;
 
 </style>
 
-<input type="checkbox" class="menu_toggle">
-<div class="hover">
+<div style="margin:100px">
 
-<div class="bar_1">
-</div>
+ <input type="checkbox" class="menu_toggle" style="opacity:0;transform:scale(3.3,3.3);position:relative;left:15px;top:32px;">
+ <div class="hover">
+ <div class="bar_1">
+ </div>
 
-<div class="bar_2">
-</div>
+ <div class="bar_2">
+ </div>
 
 </div>
