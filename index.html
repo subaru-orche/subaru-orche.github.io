@@ -266,6 +266,30 @@ background-color:#1e90ff;
 margin-left:8px;
 }
 
+.sns {
+ width: 250px;
+ margin: 30px auto 0;
+ display: flex;
+ justify-content: space-around;
+}
+.icon {
+ height: 40px;
+ width: 40px;
+ display: block;
+ border: 0;
+ transition: .3s;
+}
+.icon:hover {
+ opacity: .5;
+ border: 0;
+}
+.fb {
+ background: url(icon_fb.png) center center / contain no-repeat;
+}
+.tw {
+ background: url(icon_tw.png) center center / contain no-repeat;
+}
+
 
 @media screen and ( max-width:620px )
 {
@@ -529,6 +553,15 @@ font-size:11px;
 <section id="contact">
 <h2>お問い合わせ</h2>
 <p class="contact">メール　subaru.orche@gmail.com</p>
+</section>
+
+
+<section id="sns">
+<h2>Follow us</h2>
+<div class="sns">
+<a href="https://www.facebook.com/subaru.oche/" class="icon fb"></a>
+<a href="https://twitter.com/subaru_orche" class="icon tw"></a>
+</div>
 </section>
 
 
