@@ -54,7 +54,7 @@ html {
  margin: 0 auto;
 }
 
-section + section {
+section {
  margin-top: 80px;
 }
 
@@ -82,6 +82,11 @@ h1 {
 h1 .caption {
  font-size: 1.2rem;
 }
+h1 a {
+ display: block;
+ color: inherit;
+ text-decoration: inherit;
+}
 
 h2 {
  width: 12em;
@@ -107,7 +112,8 @@ h3 {
 
 
 nav {
- margin: 20px 0;
+ width: 800px;
+ margin: 20px auto;
 }
 nav ul {
  display: flex;
@@ -126,6 +132,17 @@ nav li a:hover {
  color: var(--blue);
 }
 
+
+
+
+
+/*
+.top_image {
+ width: 100%;
+ height: 500px;
+ background: url(subaru_01.jpg) center center / cover no-repeat;
+}
+*/
 
 
 
@@ -209,8 +226,11 @@ footer div {
 footer li {
  list-style: none;
 }
+footer li:first-child {
+ font-weight: bold;
+}
 footer li a {
- color: var(--black);
+ color: var(--gray);
  text-decoration: inherit;
 }
 footer li a:hover {
@@ -228,6 +248,24 @@ footer .orgnizer {
 
 @media (max-width : 900px){
  .contents {
+  width: 100%;
+  padding: 0 20px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .top_image {
+ height: 300px;
+ }
+ 
+ 
+ 
+ 
+ 
+nav {
   width: 100%;
   padding: 0 20px;
  }
@@ -262,6 +300,14 @@ footer .orgnizer {
  
  
  
+ .top_image {
+ height: 200px;
+ }
+ 
+ 
+ 
+ 
+ 
  #concert img {
   width: 280px;
  }
@@ -272,6 +318,7 @@ footer .orgnizer {
  
  
  footer div {
+  width: 280px;
   flex-direction: column;
   margin: 0 auto;
  }
@@ -293,16 +340,9 @@ footer .orgnizer {
 
 
 
-<div class="contents">
-
-
-
-
-
-
 <nav>
  <h1 id="top">
-  <p>広島大学<br class="br_sp">霞OB管弦楽団<span style="color:var(--blue);">"昴"</span></p>
+  <a href="index.html">広島大学<br class="br_sp">霞OB管弦楽団<span style="color:var(--blue);">"昴"</span></a>
   <p class="caption">広島大学霞管弦楽団OB・OGによる<br class="br_sp">アマチュアオーケストラ</p>
  </h1>
  <ul>
@@ -312,6 +352,20 @@ footer .orgnizer {
   <li><a href="#contact">お問い合わせ</a>
  </ul>
 </nav>
+
+
+
+
+
+
+<!--<div class="top_image"></div>-->
+
+
+
+
+
+
+<div class="contents">
 
 
 
@@ -505,6 +559,9 @@ footer .orgnizer {
   </ul>
   <ul>
    <li><a href="#contact">お問い合わせ</a>
+  </ul>
+  <ul>
+   <li><a href="member.html">出演者の方へ</a>
   </ul>
  </div>
  <p class="orgnizer">© 2018-2019 SUBARU ORCHESTRA</p>
